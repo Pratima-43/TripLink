@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripLink</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script>
+</head>
+
+<body>
+    <div id="navdiv">
+        <nav>
+            <span class="navitem logotext">
+                <span id="logo"><img src="triplink_logo.png" width="88" height="88"></span>
+                <h1 id="triplink">TripLink</h1>
+            </span>
+
+            <!-- Notify Me -->
+            <span class="navitem above notify" style="margin-right:-5px ;">
+                <img src="notify.png" width="22" height="22" class="nav-icons">
+                <span class="icon-text-above">Notify Me</span>
+            </span>
+
+            <!-- Contact Us -->
+            <span class="navitem above contact">
+                <img src="contact.png" width="27" height="27" class="nav-icons">
+                <span class="icon-text-above">Contact Us</span>
+            </span>
+
+            <hr>
+
+            <!-- Home -->
+            <a href="/beforelogin" class="home"  style="text-decoration: none;">
+            <span class="navitem below ">
+                <img src="home-icon.png" width="31" height="30" class="nav-icons">
+                <span class="icon-text">Home</span>
+            </span>
+            </a>
+
+            <!-- My Adventures -->
+            <!-- <a href="myadventure.html" style="text-decoration: none;" class="adv">
+            <span class="navitem below ">
+                <img src="adventure.png" width="27" height="27" class="nav-icons">
+                <span class="icon-text">My Adventures</span>
+            </span>
+            </a> -->
+
+            <!-- Testimonials -->
+            {{!-- <span class="navitem below testi">
+                <img id="img1"src="testimonials.png" width="30" height="30" class="nav-icons">
+                <span class="icon-text">Testimonials</span>
+                <img src="testimonialsDown.png" width="23" height="23" class="nav-icons" id="img2">
+            </span> --}}
+
+            <a href="#testimonialbutton" class="navitem below testi" style="text-decoration: none; font-size: 18px;">
+            <img id="img1" src="testimonials.png" width="30" height="30" class="nav-icons">
+            <span class="icon-text">Testimonials</span>
+            {{!-- <img src="testimonialsDown.png" width="23" height="23" class="nav-icons" id="img2"> --}}
+             </a>
+
+
+            <!-- Join Group -->
+            <a href="/availablegroup" style="text-decoration: none; ">
+            <span class="navitem below join" style="margin-top:-65px; margin-left:-20px;">
+                <img src="join.png" width="30" height="30" class="nav-icons">
+                <span class="icon-text">Join Group</span>
+            </span>
+              </a>
+
+
+            <!-- About Us -->
+             <a href="#aboutusbutton" style="text-decoration: none;" class="about">
+            <span class="navitem below ">
+                <img src="about.png" width="30" height="30" class="nav-icons">
+                <span class="icon-text">About Us</span>
+            </span>
+            </a>
+
+            <!-- Sign Up -->
+            <span class="navitem below sign" >
+                
+                <a href="/signup" style="text-decoration: none; margin-left:20px;"><button id="signUp" >
+                    <img src="signup.png" width="20" height="20">
+                    <span id="text">Sign Up</span>
+                </button>
+                </a>
+            </span>
+
+            <!-- Create Group -->
+            <span class="navitem below create">
+                <a href="/createGroup" style="text-decoration: none;">
+                <button id="creategroup">
+                    {{!-- <a href="/createGroup" style="text-decoration: none;"> --}}
+                    <img src="creategroup.png" width="27" height="26">
+                    <span id="text">Create a group</span>
+                </button></a>
+            </span>
+
+            <span class="navitem below create">
+                <a href="/login" id="logoutbutton" style="background-color: #E2B571; color:#2D2B26; border: 3px solid #2D2B26; width: 110px; height: 45px; margin-right: 1px; border-radius: 10px; font-size: 18px; font-weight:600px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-decoration: none;">
+                <img src="Sign_out_circle.png" width="25" height="25" style="margin-right: 10px;">
+                 Logout
+                </a>
+            </span>
+        </nav>
+    </div>
+    
+    <div class="carousel">
+        <figure>
+        <img src="jaipur.png">
+        <img src="pondicherry.png">
+        <img src="gonavali.png">
+        <img src="manali.png">
+        <img src="ladakh.png">
+        <!-- <img src="meghalaya.png"> -->
+        </figure>
+        <!-- <div class="slide"><img src="pondicherry.png" width="1693" height="642"></div>
+        <div class="slide"><img src="gonavali.png" width="1693" height="642"></div>
+        <div class="slide"><img src="manali.png" width="1693" height="642"></div>
+        <div class="slide"><img src="ladakh.png" width="1693" height="642"></div>
+        <div class="slide"><img src="meghalaya.png" width="1693" height="642"></div> -->
+    </div>
+
+
+    <div class="month-timeline">
+         
+        <span id="monthName" >
+             <span id="monthTitle">October</span> TimeLine
+        </span>
+        <div id="batch1">
+        <span class="kerala zoom" ><img src="kerala.png" width="230"></span>
+        <span class="srinagar zoom"><img src="srinagar.png" width="230"  ></span>
+        <span class="chikmagalur zoom"><img src="chikmagalur.png" width="230"  ></span>
+        <span class="rishikesh zoom"><img src="rishikesh.png" width="230"  ></span>
+        <span class="jaipur zoom"><img src="Jaipur1.png" width="230"  ></span>
+        </div>
+
+
+        
+        
+        
+            
+        
+       
+
+    </div>
+
+    
+    <div class="aboutUs" id="aboutusbutton">
+        <img src="aboutUs.png" width="1320" height="642">
+    </div>
+
+    <div class="testimonials" id="testimonialbutton">
+        <h3>TESTIMONIALS</h3>
+        <img src="line.png" id="line"width="121.12">
+        <marquee behavior="scroll" direction="left" scrollamount="5" loop="infinite">
+        <div id="people">
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span5 class="review"><img src="jane.png" height="500"></span5
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+            <span class="review"><img src="jane.png" height="500"></span>
+            <span class="review"><img src="parakeet.png" height="500"></span>
+            <span class="review"><img src="emily.png" height="500"></span>
+            <span class="review"><img src="justin.png" height="500"></span>
+            <span class="review"><img src="selena.png" height="500"></span>
+        </div></marquee>
+    </div>
+    
+    <div class="footer">
+        <span id="triplink">TripLink</span>
+        <span id="footer-right">
+            <span>Legal Stuff</span>
+            <span>Privacy Policy</span>
+            <span>Manage Cookies</span>
+            {{!-- <span>Website Accessibility</span> --}}
+        </span>
+        <span id="location">
+            <img src="location.png" width="26" height="28">
+            <h4>BML Munjal University</h4>
+        </span>
+        <span id="copyright">
+            Copyright 2025 TripLink . All rights reserved
+        </span>
+        <span id="call">
+            <img src="call.png" width="19" height="19">
+            <h4>1234-365-978</h4>
+        </span>
+
+        <div class="socialMedia">
+            <span >
+             <a href="https://www.facebook.com/"><img src="facebook.png" width="26" height="26"></a>
+             <a href="https://x.com/?lang=en"><img src="x.png" width="26" height="26"></a>
+             <a href="https://in.linkedin.com/"><img src="in.png" width="26" height="26"></a>
+             <a href="https://www.instagram.com/"><img src="instagram.png" width="26" height="26"></a>
+             <a href="https://www.youtube.com/"><img src="youtube.png" width="26" height="26"></a>
+            </span>
+        </div>
+
+        <div id="q1">Sign up to travel efficiently </div>
+        <div id="q2">Put yourself in the know and receive the most exclusive offers before anyone else</div>
+
+        <form class="info">
+            <span id="name" ><span><img src="user.png" width="24" height="24"></span><input type="text" class="in" placeholder="Your Name"></span>
+            <span id="email" ><span><img src="email.png" width="24" height="24"></span><input type="email" class="in" placeholder="Your Email"></span>
+            <span id="submit" ><button type="submit" id="submitbut" onclick="onSubscribe()">Submit</button></span>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

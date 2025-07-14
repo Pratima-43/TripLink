@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/login.css">
+</head>
+<body>
+    <span class="navitem logotext">
+        <!-- <span id="logo"><img src="logo.png" width="78" height="88"></span> -->
+        <h1 id="triplink">TripLink</h1>
+    </span>
+    <div class="container">
+        <div class="features-section">
+             <div class="features-header">
+                <span>🚩 1000+ Completed Trips</span>
+                <span>⭐ 4.5 / 5.0</span>
+            </div>
+            
+            <div class="features-content">
+                <h3>Features</h3>
+                <ul>
+                    <li><img src="checked.png" alt="Tick"> Plan Together Effortlessly</li>
+                    <li><img src="checked.png" alt="Tick"> Track and Split Expenses</li>
+                    <li><img src="checked.png" alt="Tick"> Seamless Group Communication</li>
+                    <li><img src="checked.png" alt="Tick"> Tailored Trip Recommendations</li>
+                </ul>
+            </div>
+        </div>
+        <div class="signin-section">
+            <div class="profile-pic">
+                <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA4L2pvYjEwMzQtZWxlbWVudC0wNy00MDMucG5n.png" alt="Profile Picture">
+            </div>
+            <h2>Sign In</h2>
+            <form action="/login" method="post">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="prateek.soni.23cse@bmu.edu.in" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="************" required>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+                <div>
+                    New User? Signup First
+                 <button id="signupButton">
+                         <a href="/signup">Signup</a>
+                 </button>
+                </div>
+            </form>
+        </div>
+        </div>
+        
+    
+</body>
+</html>
+
+
+

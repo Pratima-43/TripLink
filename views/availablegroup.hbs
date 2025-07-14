@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="/group.css">
+
+</head>
+<body>
+
+    
+      <div id="img">
+        <img src="groupsss.png" id="image" style="width: 1250px; height: 700px;">
+    </div>
+
+    <div id="group-buttons">
+        
+        <a href="/availablegroup">Available Groups</a>
+        <a href="/joinedgroup">Joined Groups</a>
+        <a href="/createdgroup">Created Groups</a>
+    </div>
+    
+
+    {{#each groups}}
+  <div class="group-card">
+    <h3>{{groupName}}</h3>
+    <p><strong>Destination:</strong> {{destination}}</p>
+    <p><strong>Budget:</strong> ₹{{budget}}</p>
+    <p><strong>Transport:</strong> {{modeOfTransport}}</p>
+    <p><strong>Seats Left:</strong> {{seatsLeft}}</p>
+
+    {{#if (eq admin.email ../currentUserEmail)}}
+      <p style="color: green;"><strong>You are the admin of this group.</strong></p>
+    {{else}}
+      {{#if (includes members ../currentUserEmail)}}
+        <p style="color: blue;"><strong>You have already joined this group.</strong></p>
+      {{else}}
+        {{#if (lt members.length maxMembers)}}
+          <form action="/join/{{_id}}" method="POST">
+            <button type="submit" onclick="return confirm('Do you want to send a join request for this group?')">
+              Join Group
+            </button>
+          </form>
+        {{else}}
+          <p style="color: red;"><strong>Group Full</strong></p>
+        {{/if}}
+      {{/if}}
+    {{/if}}
+
+  </div>
+{{/each}}
+
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+@font-face {
+    font-family: katibeh;
+    src: url('katibeh.ttf');
+}
+@font-face {
+    font-family: MaShanZheng;
+    src: url('MaShanZheng.ttf');
+}
+@font-face {
+    font-family: kameron;
+    src: url('kameron.ttf');
+}
+body{
+    overflow: hidden;
+}
+
+.home {
+    display: flex;
+    z-index: 1;
+    position: relative;
+    margin-left: 265px;
+    margin-bottom: -65px;
+    top: -65px;
+    left: 420px;
+
+}
+.icon-text{
+    color: #33363F;
+    font-family: kameron;
+    font-size: 20px;
+    font-weight: 500;
+}
+.home span {
+    margin-bottom: -3px;
+    position: relative;
+    top: -10px;
+    
+}
+.home img {
+    margin-bottom: 5px;
+    margin-right: -7px;
+}
+
+.logotext {
+    display: flex;
+    align-items: center;
+    margin-top:-12px;
+    /* margin-left: px; */
+    z-index: 1;
+    position: relative;
+    left: 30px;
+}
+
+#logo {
+    margin-left: -30px;
+    margin-right: 10px;
+    z-index: 1;
+}
+
+#triplink{
+    font-family: MaShanZheng, sans-serif;
+    font-size: 53px;
+    margin-left:-13px;
+    /* margin-top: -px; */
+    color: #183D4B;
+    font-weight: 500;
+    z-index: 1;
+}
+
+#whole {
+    position: relative;
+    bottom: 100px;
+}
+#group {
+    display: flex;
+    position: relative;
+    top: 50px;
+}
+#text {
+    display: flex;
+    position: absolute;
+    color: #C2716C;
+    font-size: 40px;
+    top: 380px;
+    left: 100px;
+}
+#text h3 {
+    font-family: katibeh;
+    font-weight:500;
+}
+#text h4 {
+    font-family: MaShanZheng;
+    position: relative;
+    top:40px;
+    left: -350px;
+    font-size: 50px;
+    font-weight: 500;
+    
+}
+#details {
+    display: flex;
+
+    justify-content: flex-end;
+    position: relative;
+    bottom: 450px ;
+    right: 50px;
+    
+}
+input {
+    border: 2px solid #99620F;
+    border-radius: 6px;
+    height: 40px;
+    width: 450px;
+    padding-left: 30px;
+    color: #99620F;
+    font-size: 17px;
+    font-family: kameron;
+    display: flex;
+    position: relative;
+    right: 100px;
+    bottom: 5px;
+}
+textarea:focus, input:focus {
+    outline: none;
+}
+
+#start input , #end input{
+    border: none;
+
+}
+h5 {
+    color: #99620F;
+    font-family: kameron;
+    font-size: 17px;
+    z-index: 1;
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    right: 70px;
+    top: 33px;
+}
+
+input::placeholder {
+    font-family: kameron;
+    font-size: 17px;
+}
+
+#destination {
+    position: relative;
+    top: -65px;
+}
+
+#startinput,#endinput {
+    border-radius: 6px;
+    border: 2px solid #99620F;
+}
+#max {
+    position: relative;
+    top: -240px;
+    right: -250px;
+}
+
+#transport{
+    position: relative;
+    bottom: 305px;
+}
+#cost {
+    position: relative;
+    bottom: 90px;
+}
+
+
+#cost input,#max input {
+    width: 200px;
+}
+
+#groupName img{
+    z-index: 2;
+    position: relative;
+    top:110px;
+    right: 95px;
+}
+#destination #img1{
+    z-index: 2;
+    position: relative;
+    top:110px;
+    right: 95px;
+}
+#cost img{
+    z-index: 2;
+    position: relative;
+    top:110px;
+    right: 95px;
+}
+#max img{
+    z-index: 2;
+    position: relative;
+    top:113px;
+    right: 95px;
+}
+#transport img{
+    z-index: 2;
+    position: relative;
+    top:113px;
+    right: 95px;
+}
+#createButton button {
+    display: flex;
+    position: relative;
+    bottom: 270px;
+    z-index: 1;
+    height: 42px;
+    width: 485px;
+    border-radius: 6px;
+    border: 2px solid #99620F;
+    background-color: #99620F;
+    color: white;
+    font-family: kameron;
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
+    right: 100px;
+    cursor: pointer;
+    
+}
+
+#createButton button:hover {
+    border: 2px solid #8e5b10;
+    background-color: #8e5b10;
+}

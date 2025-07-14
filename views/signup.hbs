@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <!-- Back Button -->
+    <div class="back-button">
+        <a href="/beforelogin">
+        <img src="Sign_out_circle.png" alt="Back"></a>
+    </div>
+
+    <div class="container">
+        <!-- Features Section -->
+        <div class="features">
+            <div class="features-header">
+                <span>🚩 1000+ Completed Trips</span>
+                <span>⭐ 4.5 / 5.0</span>
+            </div>
+            <div class="features-content">
+                <h2>Features</h2>
+                <ul>
+                    <li><img src="checked.png" alt="Tick"> Plan Together Effortlessly</li>
+                    <li><img src="checked.png" alt="Tick"> Track and Split Expenses</li>
+                    <li><img src="checked.png" alt="Tick"> Seamless Group Communication</li>
+                    <li><img src="checked.png" alt="Tick"> Tailored Trip Recommendations</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Registration Form Section -->
+        <div class="registration-form">
+            <div class="form-header">
+                <h2>Create Account</h2>
+                <div class="profile-image">
+                    <img src="profpic.png" alt="User Image">
+                </div>
+            </div>
+            <form action="/signup" method="POST">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="firstName" placeholder="John">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="lastName" placeholder="Dane">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" placeholder="19">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <div class="mobile-input">
+                        <span class="country-code">+91</span>
+                        <input type="text" id="mobile" name="mobile" placeholder="7703-865-632">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="john.dane.cse@bmu.edu.in">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="*************">
+                </div>
+                <div class="form-group">
+                    <label for="confirm">Confirm Password</label>
+                    <input type="password" id="confirm" name="confirmPassword" placeholder="*************">
+                </div>
+                <div class="form-remember">
+                    <input type="radio" id="remember" name="remember" >
+                    <label for="remember">Remember Me</label>
+                </div>
+                <button type="submit" class="register-btn">Register</button>
+                <div style="text-align: center; margin-top: 15px;">
+                    <span style="font-size: 15px;">Already have an account?</span><br>
+                    <a href="/login" id="loginButton">Login</a>
+                </div>
+
+            </form>
+           
+        </div>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Group</title>
+    <link rel="stylesheet" href="createGroup.css">
+    <script src="create.js" defer></script>
+</head>
+<body>
+
+    <span class="navitem logotext"> 
+        <!-- <span id="logo"><img src="logo.png" width="78" height="88"></span> -->
+        <h1 id="triplink">TripLink</h1>
+    </span>
+    <a href="/beforelogin" class="home"  style="text-decoration: none;">
+        <span class="navitem below ">
+            <img src="home-icon.png" width="31" height="30" class="nav-icons">
+            <span class="icon-text">Home</span>
+        </span>
+    </a>
+    
+    <span id="whole">
+        <span id="group">
+        <span><img src="group.png" width="786" height="491" class="vec"></span>
+            <span id="text">
+            <h3>Making traveling groups easier using</h3>
+            <h4>TripLink</h4>
+            </span>
+        </span>
+
+        <span id="details">
+            <form id="createForm"  action="/creategroup" method="post">
+                <span id="groupName">
+                    <img src="G.png" width="24" height="24">
+                    <h5>Group Name</h5>
+                    <input type="text" placeholder="Eg. TripBuddies" required id="name" name="groupName">
+                </span>
+                <span id="destination">
+                    <img id="img1" src="dest.png" width="24" height="24">
+                    <h5>Destination</h5>
+                    <input type="text" list="places" required id="dest" name="destination">
+                    <datalist id="places">
+                        <option value="Agra, Uttar Pradesh"></option>
+                        <option value="New Delhi, Delhi"></option>
+                        <option value="Jaipur, Rajasthan"></option>
+                        <option value="Mumbai, Maharashtra "></option>
+                        <option value="Goa"></option>
+                        <option value="Varanasi, Uttar Pradesh"></option>
+                        <option value="Alleppey, Kerala "></option>
+                        <option value="Leh-Ladakh, Jammu & Kashmir"></option>
+                        <option value="Rishikesh, Uttarakhand "></option>
+                        <option value="Shimla, Himachal Pradesh"></option>
+                        <option value="Manali, Himachal Pradesh"></option>
+                        <option value="Jodhpur, Rajasthan"></option>
+                        <option value="Udaipur, Rajasthan"></option>
+                        <option value="Amritsar, Punjab "></option>
+                        <option value="Chennai, Tamil Nadu"></option>
+                        <option value="Kolkata, West Bengal"></option>
+                        <option value="Mysore, Karnataka"></option>
+                        <option value="Bengaluru, Karnataka"></option>
+                        <option value="Hyderabad, Telangana"></option>
+                        <option value="Pondicherry, Puducherry"></option>
+                        <option value="Darjeeling, West Bengal"></option>
+                        <option value="Nainital, Uttarakhand "></option>
+                        <option value="Mussoorie, Uttarakhand"></option>
+                        <option value="Coorg, Karnataka"></option>
+                        <option value="Port Blair, Andaman & Nicobar Islands"></option>
+                        <option value="Jaisalmer, Rajasthan"></option>
+                        <option value="Ranthambore, Rajasthan "></option>
+                        <option value="McLeod Ganj, Himachal Pradesh"></option>
+                        <option value="Ooty, Tamil Nadu"></option>
+                        <option value="Mahabalipuram, Tamil Nadu "></option>
+                        <option value="Kodaikanal, Tamil Nadu"></option>
+                        <option value="Lonavala, Maharashtra "></option>
+                        <option value="Ajanta & Ellora, Maharashtra"></option>
+                        <option value="Nashik, Maharashtra"></option>
+                        <option value="Bhopal, Madhya Pradesh"></option>
+                        <option value="Khajuraho, Madhya Pradesh "></option>
+                        <option value="Pushkar, Rajasthan"></option>
+                        <option value="Mount Abu, Rajasthan"></option>
+                        <option value="Haridwar, Uttarakhand "></option>
+                        <option value="Dehradun, Uttarakhand "></option>
+                        <option value="Dalhousie, Himachal Pradesh"></option>
+                        <option value="Kullu, Himachal Pradesh"></option>
+                        <option value="Ranchi, Jharkhand"></option>
+                        <option value="Gangtok, Sikkim"></option>
+                        <option value="Guwahati, Assam"></option>
+                        <option value="Mahabaleshwar, Maharashtra "></option>
+                        <option value="Kumarakom, Kerala"></option>
+                        <option value="Tirupati, Andhra Pradesh"></option>
+                        <option value="Puri, Odisha"></option>
+                        <option value="Kanchipuram, Tamil Nadu"></option>
+                        <option value="Madurai, Tamil Nadu "></option>
+                        <option value="Srinagar, Jammu & Kashmir"></option>
+                        <option value="Kanyakumari, Tamil Nadu"></option>
+                        <option value="Rameswaram, Tamil Nadu"></option>
+                        <option value=" Auli, Uttarakhand"></option>
+                        <option value="Gulmarg, Jammu & Kashmir"></option>
+                        <option value="Dharamshala, Himachal Pradesh "></option>
+                        <option value="Havelock Island, Andaman"></option>
+                        <option value="Shillong, Meghalaya"></option>
+                        <option value="Cherrapunjee, Meghalaya"></option>
+                        <option value="Patna, Bihar "></option>
+                        <option value="Bodh Gaya, Bihar"></option>
+                        <option value="Tsomgo Lake, Sikkim "></option>
+                        <option value="Gokarna, Karn"></option>
+                        <option value="Rann of Kutch, Gujarat"></option>
+                        <option value="Dwarka, Gujarat"></option>
+                        <option value="Sundarbans, West Bengal"></option>
+                        <option value="Kalimpong, West Bengal"></option>
+                        <option value="Patan, Gujarat "></option>
+                        <option value="Udaigiri Caves, Madhya Pradesh"></option>
+                        <option value="Kailash Mansarovar, Uttarakhand "></option>
+                        <option value="Bhubaneswar, Odisha "></option>
+                        <option value="Silvassa, Dadra & Nagar Haveli "></option>
+                        <option value="Lavasa, Maharashtra"></option>
+                        <option value="Pachmarhi, Madhya Pradesh"></option>
+                        <option value="Bikaner, Rajasthan "></option>
+                        <option value="Nagarhole, Karnataka"></option>
+                        <option value="Nanda Devi, Uttarakhand"></option>
+                        <option value="Spiti Valley, Himachal Pradesh"></option>
+                        <option value="Zanskar Valley, Jammu & Kashmir"></option>
+                        <option value="Bundi, Rajasthan"></option>
+                        <option value="Jhansi, Uttar Pradesh"></option>
+                        <option value="Tiruvannamalai, Tamil Nadu"></option>
+                        <option value="Bijapur, Karnataka "></option>
+                        <option value="Alwar, Rajasthan"></option>
+                        <option value="Lonar, Maharashtra "></option>
+                    </datalist>
+                    </datalist>
+                </span>
+                <!-- <span id="start">
+                    <h5>Start</h5>
+                    <span id="startinput">
+                    <span><input type="date"></span>
+                    <span><input type="time"></span>
+                    </span>
+                </span>
+                <span id="end">
+                    <h5>End</h5>
+                    <span id="endinput">
+                    <span><input type="date"></span>
+                    <span><input type="time"></span>
+                    </span>
+                </span> -->
+                <span id="cost">
+                    <img src="rupee.png" width="24" height="24">
+                    <h5>Cost of Travel</h5>
+                    <input type="text" placeholder="0.00" required  id="costOfTravel" name="budget">
+                </span>
+                <span id="max">
+                    <img src="filter.png" width="24" height="24">
+                    <h5>Max. Members</h5>
+                    <input type="text" id="maxNum" required name="maxMembers" >
+                </span>
+                <span id="transport">
+                    <img src="trans.png" width="24" height="24">
+                    <h5>Transport</h5>
+                    <input type="text" list="transportation" required id="modeOfTransport" name="modeOfTransport">
+                    <datalist id="transportation">
+                       <option value="Private Transport"></option>
+                       <option value="Cab Sharing"></option>
+                       <option value="Shuttle Services"></option>
+                       <option value="Railways"></option>
+                       <option value="Flight"></option>
+                    </datalist>
+                </span>
+                <span id="createButton"><button type="submit" id="submitButton">Create Group</button></span>
+            </form>
+        </span>
+    </span>
+        
+        
+        
+    
+    
+</body>
+</html>

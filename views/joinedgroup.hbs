@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joined Groups</title>
+  <link rel="stylesheet" href="/group.css">
+</head>
+<body>
+  <div id="img">
+        <img src="groupsss.png" id="image" style="width: 1250px; height: 700px;">
+    </div>
+
+  <div id="group-buttons">
+    <a href="/availablegroup">Available Groups</a>
+    <a href="/joinedgroup">Joined Groups</a>
+    <a href="/createdgroup">Created Groups</a>
+  </div>
+
+  <h2>Groups You've Joined</h2>
+
+  {{#if groups.length}}
+    {{#each groups}}
+      <div class="group-card">
+        <h3>{{groupName}}</h3>
+        <p><strong>Destination:</strong> {{destination}}</p>
+        <p><strong>Budget:</strong> ₹{{budget}}</p>
+        <p><strong>Transport:</strong> {{modeOfTransport}}</p>
+        <p><strong>Seats Left:</strong> {{subtract maxMembers members.length}}</p>
+
+        <p><strong>Admin:</strong> {{admin.name}}, {{admin.email}}, {{admin.gender}}, {{admin.age}} yrs</p>
+
+        <h4>Members:</h4>
+        {{#each members}}
+          <p>- {{name}} ({{email}}, {{gender}}, {{age}} yrs)</p>
+        {{/each}}
+      </div>
+    {{/each}}
+  {{else}}
+    <p style="text-align: center; margin-top: 30px;">You haven't joined any groups yet.</p>
+  {{/if}}
+
+</body>
+</html>

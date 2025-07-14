@@ -1,0 +1,59 @@
+
+#group-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  gap: 30px;
+}
+
+#group-buttons a {
+  text-decoration: none;
+  padding: 10px 25px;
+  background-color: #99620F;
+  color: white;
+  font-family: kameron;
+  font-size: 18px;
+  border-radius: 6px;
+  border: 2px solid #99620F;
+  transition: 0.3s ease;
+}
+
+#group-buttons a:hover {
+  background-color: #8e5b10;
+  border-color: #8e5b10;
+}
+
+.group-card {
+  border: 2px solid #99620F;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  background: #fffdf8;
+  border-radius: 10px;
+  font-family: kameron;
+}
+
+.group-card h3 {
+  color: #99620F;
+  margin-bottom: 10px;
+}
+
+.group-card p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.group-card form button {
+  padding: 8px 20px;
+  background-color: #99620F;
+  color: white;
+  font-family: kameron;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.group-card form button:hover {
+  background-color: #8e5b10;
+}

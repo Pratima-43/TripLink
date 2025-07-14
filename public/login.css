@@ -1,0 +1,242 @@
+
+@font-face {
+    font-family: MaShanZheng;
+    src: url('MaShanZheng.ttf');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+body {
+    background-image: url("bgimg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+   
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;  
+    align-items: flex-start;
+    gap: 40px; /* Space between feature and form */
+    max-width: 1200px;  
+    margin: 1px auto 0 auto;
+    padding: 0 40px;
+    height: 95vh; 
+    overflow: hidden;
+}
+
+
+.logotext {
+    display: flex;
+    /* align-items: center; */
+    margin-top:-12px;
+    /* margin-left: px; */
+    z-index: 1;
+    position: relative;
+    left: -260px;
+    top: -300px;
+}
+
+#signupButton {
+    background-color: #8B6F47;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#signupButton:hover {
+    background-color: #6B5032;
+}
+textarea:focus, input:focus {
+    outline: none;
+}
+#triplink {
+    font-family: MaShanZheng, sans-serif;
+    font-size: 53px;
+    margin-left:-13px;
+    /* margin-top: -px; */
+    color: #183D4B;
+    font-weight: 500;
+    z-index: 1;
+}
+/* .container {
+    display: flex;
+    background-color:transparent;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 800px;
+    overflow: hidden;
+    
+} */
+.features-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.features-section {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px; 
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 110px;
+}
+
+.features-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #1B3798;
+}
+
+.features-section {
+    
+    width: 50%;
+    padding: 20px;
+    position: center;
+}
+
+.features-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features-content ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.features-content ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.back-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.completed-trips {
+    margin-bottom: 70px;
+    font-size: 16px;
+    color: 2F2F2F;
+}
+
+.completed-trips .rating {
+    display: block;
+    margin-top: 5px;
+    color: gold;
+}
+.features{
+    background-color: white;
+    box-shadow: black;
+    position: relative;
+    border-radius: 10px;
+    padding: 15px 15px;
+    padding-left: 20px;
+    top: 50px;
+}
+
+.features h3 {
+    color:blue;
+    margin-bottom: 10px;
+}
+
+.features ul {
+    
+    list-style-position:center;
+    
+    color:2F2F2F;
+}
+
+.features ul li {
+    padding-right: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+ .signin-section {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    padding: 20px 30px;
+    width: 500px;  
+    max-height: 640px;
+} 
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color:#5A4F42;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #5A4F42;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    /* border: 1px solid #CCC; */
+    padding: 10px;
+    border: 2px solid #896A2E;
+    font-size: 16px;
+}
+
+.login-btn {
+    background-color: #8B6F47;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #6B5032;
+}
+
+.curve-container {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+    overflow: hidden; 
+    background-color: #f5f2ec; 
+}
+
+
+
+
+
+
+

@@ -1,0 +1,242 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+body {
+    background-image: url("bgimg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+   
+
+}
+
+#loginButton {
+    display: inline-block;
+    background: #896A2E;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+#loginButton:hover {
+    background: #99620F;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;  
+    align-items: flex-start;
+    gap: 40px; /* Space between feature and form */
+    max-width: 1200px;  
+    margin: 1px auto 0 auto;
+    padding: 0 40px;
+    height: 95vh; 
+    overflow: hidden;
+}
+
+.features {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 20px;
+    width: 460px; 
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 110px;
+}
+
+.features-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.features-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #1B3798;
+}
+
+.features-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features-content ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.features-content ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.registration-form {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    padding: 20px 30px;
+    width: 500px;  
+    max-height: 640px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #ccc;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+}
+
+.registration-form h2 {
+    font-size: 26px;
+    color: #896A2E;
+    margin: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px 4%;
+}
+
+.form-group {
+    width: 47%;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-group label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: #fff;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #896A2E;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #896A2E;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group input::placeholder {
+    color: #ccc;
+    font-style: italic;
+}
+
+.mobile-input {
+    display: flex;
+    align-items: center;
+}
+
+.country-code {
+    background: #f0f0f0;
+    padding: 10px;
+    border: 2px solid #8B4513;
+    border-radius: 5px 0 0 5px;
+}
+
+.mobile-input input {
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+}
+
+.form-remember {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.form-remember input {
+    margin-right: 10px;
+    -webkit-appearance: none;   /*to remove the browser’s default look */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #886A3C;
+    border-radius: 50%;
+    position: relative;
+}
+
+.form-remember input:checked {
+    background-color: #896A2E;
+    border: none;
+}
+
+.form-remember input:checked::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.register-btn {
+    background: #896A2E;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.register-btn:hover {
+    background: #99620F;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+p a {
+    color: #8B4513;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
